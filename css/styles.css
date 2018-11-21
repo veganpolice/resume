@@ -1,6 +1,6 @@
 body {
-  color: #fff;
-  background-color: #fff;
+  color: white;
+  background-color: white;
   box-sizing: border-box;
 }
 
@@ -8,7 +8,7 @@ hr {
   width: 95px;
   margin: 0 0 30px;
   border-width: 4px;
-  border-color: #ff4d57;
+  border-color: #424250;
 }
 
 a {
@@ -42,22 +42,20 @@ a:hover {
 }
 
 .main-container {
-  background-color: #fff;
+  background-color: white;
   max-width: 850px;
 }
-
 
 /* ======================
         TYPOGRAPHY
 ======================= */
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #252525;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-variant-ligatures: common-ligatures;
   margin-top: 0;
@@ -66,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -77,7 +75,6 @@ p {
 /* ======================
     SPACING & ALIGNMENT
 ======================= */
-
 .text-center {
   text-align: center;
 }
@@ -97,13 +94,12 @@ p {
 
 .card {
   padding: 10px;
-  background-color: #fff;
+  background-color: white;
 }
 
 /* ======================
        ABOUT ME
 ======================= */
-
 h2.title {
   font-size: 24px;
   line-height: 24px;
@@ -121,15 +117,12 @@ h2.title:after {
   display: inline-block;
   width: 100%;
   vertical-align: middle;
-  border-bottom: 4px solid #ff4d57;;
+  border-bottom: 4px solid #424250;
   overflow: hidden;
   justify-content: space-around;
 }
 
 .main-name {
-  /* position: absolute;
-  top: 20px;
-  left: 10px; */
   font-size: 54px;
 }
 
@@ -156,8 +149,6 @@ h2.title:after {
 /* =====================================
           SKILL STACK
 ======================================= */
-
-
 .skills h5 {
   margin-bottom: 10px;
   padding: 0 5px;
@@ -170,9 +161,8 @@ h2.title:after {
 /* =====================================
           CONTACT & LINKS
 ======================================= */
-
 .link-container {
-  background-color: #fff;
+  background-color: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin-bottom: 10px;
 }
@@ -190,18 +180,16 @@ h2.title:after {
   border-radius: 2px;
 }
 
-
 /* =====================================
             EMPLOYMENT
 ======================================= */
-
 .employment-container {
   padding-top: 0;
   padding-bottom: 0;
 }
 
 section.employment {
- margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 section.employment h4 {
@@ -220,16 +208,23 @@ section.employment p {
   padding: 5px 0;
 }
 
-section.employment a {
-  text-decoration: underline;
+.employment-link {
+  color: #424250;
+  float: right;
+  text-decoration: none;
 }
 
+.employment-link a {
+  color: #424250;
+}
 
+.employment-link a:hover {
+  color: #252525;
+}
 
 /* =====================================
               PROJECTS
 ======================================= */
-
 .project {
   max-width: 428px;
   margin: 0 auto 10px;
@@ -254,36 +249,31 @@ section.employment a {
 }
 
 .project-button {
-  padding: 2px 0 2px 5px;
+  padding: 2px 5px;
   text-transform: uppercase;
-  background-color: #00c4f1;
-  color: #fff;
+  background-color: #252525;
+  color: white;
   height: 17px;
   font-size: 12px;
   white-space: nowrap;
 }
 
-.project-button::after {
-  content: "";
-  position: relative;
-  left: 7px;
-  top: 17px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 19px 7px 0 0;
-  border-color: #00c4f1 transparent transparent transparent;
+a.project-button {
+  color: white;
+  text-decoration: none;
+  -webkit-transform: skew(-10deg, 0);
 }
 
-a.project-button {color: #fff; text-decoration: none; -webkit-transform: skew(-10deg, 0);}
-a.project-button:hover { color: #fff; background-color: #00add5;}
-a.project-button:hover::after {border-color: #00add5 transparent transparent transparent;}
+a.project-button:hover {
+  color: white;
+  background-color: #424250;
+}
 
 .button-nested {
   padding: 2px 0 2px 10px;
   text-transform: uppercase;
   background-color: #00bce2;
-  color: #fff;
+  color: white;
   height: 17px;
   font-size: 12px;
   white-space: nowrap;
@@ -301,33 +291,37 @@ a.project-button:hover::after {border-color: #00add5 transparent transparent tra
   border-color: #00bce2 transparent transparent transparent;
 }
 
-a.button-nested {color: #fff; text-decoration: none; -webkit-transform: skew(-10deg, 0);}
-a.button-nested:hover { color: #fff; background-color: #00a6cc;}
-a.button-nested:hover::after {border-color: #00a6cc transparent transparent transparent;}
+a.button-nested {
+  color: white;
+  text-decoration: none;
+  -webkit-transform: skew(-10deg, 0);
+}
+
+a.button-nested:hover {
+  color: white;
+  background-color: #00a6cc;
+}
+
+a.button-nested:hover::after {
+  border-color: #00a6cc transparent transparent transparent;
+}
 
 /* =====================================
           FOOTER
 ======================================= */
-
 .footer {
   padding: 10px 0 20px;
   text-align: center;
 }
 
 .footer p {
-  color: ##848484;
+  color: #848484;
   font-size: 14px;
-}
-
-.love {
-  color: #ff4d57;
-  font-size: 12px;
 }
 
 /* =====================================
             MEDIA QUERIES
 ======================================= */
-
 @media screen and (max-width: 480px) {
   .main-name {
     font-size: 45px;
@@ -336,8 +330,16 @@ a.button-nested:hover::after {border-color: #00a6cc transparent transparent tran
   .summary-container h3 {
     font-size: 22px;
   }
-}
 
+  .employment-link {
+    display: inline-flex;
+    float: none;
+  }
+
+  .employment-title {
+    padding-right: 12em;
+  }
+}
 @media screen and (max-width: 768px) {
   .github-corner {
     display: none;
@@ -360,43 +362,32 @@ a.button-nested:hover::after {border-color: #00a6cc transparent transparent tran
     padding-top: 0;
   }
 }
-
-@media screen and (max-width: 992px) {}
-
-@media screen and (max-width: 1200px) {}
-
-@media print {
-
-}
-
 /* =====================================
             GITHUB CORNER LINK
 ======================================= */
-
 .github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out
+  animation: octocat-wave 560ms ease-in-out;
 }
 
 @keyframes octocat-wave {
-  0%,
-  100% {
-    transform: rotate(0)
+  0%, 100% {
+    transform: rotate(0);
   }
-  20%,
-  60% {
-    transform: rotate(-25deg)
+  20%, 60% {
+    transform: rotate(-25deg);
   }
-  40%,
-  80% {
-    transform: rotate(10deg)
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
   }
 }
 
-@media (max-width:500px) {
-  .github-corner:hover .octo-arm {
-    animation: none
-  }
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out
-  }
-}
+/*# sourceMappingURL=styles.css.map */
