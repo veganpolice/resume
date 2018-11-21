@@ -171,12 +171,12 @@ h2.title:after {
   color: #252525;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .contact-list > li {
-  display: inline;
-  padding: 10px;
+  display: inline-flex;
+  padding-top: 10px;
   border-radius: 2px;
 }
 
